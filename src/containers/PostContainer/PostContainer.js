@@ -73,7 +73,12 @@ class PostContainer extends Component {
           disabled={fetching}
           onClick={this.handleNavigateClick}
         />
-        <Post title={post.title} body={post.body} comments={comments} />
+        <Post
+          postId={postId}
+          title={post.title}
+          body={post.body}
+          comments={comments}
+        />
         <Warning
           visible={warningVisibility}
           message="That post does not exist"
